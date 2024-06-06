@@ -78,14 +78,13 @@ nav {
 
 .twocolumninput__container {
     position: relative;
-    
 }
 
 .twocolumn__container {
     display: flex;
     flex-direction: row;
     margin-top: 80px;
-    
+    margin-bottom: 80px;
 }
 
 .left__column {
@@ -94,13 +93,14 @@ nav {
     justify-content: left;
     align-items: left;
     width: 40%;
-    padding-right: 18px;
+    padding-right: 24px;
 }
 
 .right__column {
     display: flex;
     flex-direction: column;
     width: 60%;
+    position: relative;
 }
 
 h1 {
@@ -278,4 +278,77 @@ h4 {
     margin: 32px 0 0 0;
 }
 
+.right__column--img {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    border-radius: 4px;
+    border: 1px solid #a0a0a0;                          
+    z-index: 2;
+    margin-left: 24px;
+}
 
+.right__column--img--accent {
+    position: absolute;
+    right: 4px;
+    bottom: -12px;
+    z-index: 1;
+}
+
+.accent__img--right {
+    width: 100px;
+    opacity: .8;
+}
+
+.left__column--img {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    z-index: 2;
+}
+
+.left__column--img--accent {
+    position: relative;
+    z-index: 1;
+}
+
+.accent__img--left {
+    width: 125px;
+    position: absolute;
+    bottom: 24px;
+    right: 400px;
+    opacity: .25;
+}
+
+.twocolumn__steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.twocolumn__steps--list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    margin: 18px 0;
+}
+
+.twocolumn__steps--number {
+    font-size: 48px;
+    font-weight: 600;
+    color: #a0a0a0;
+    padding-right: 12px;
+}
+
+.twocolumn__steps--header {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.twocolumn__steps--text {
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 1em;
+    margin: 8px 0;
+}
