@@ -83,8 +83,8 @@ nav {
 .twocolumn__container {
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 92px;
+    margin-bottom: 92px;
 }
 
 .left__column {
@@ -139,13 +139,13 @@ p {
 input {
     width: 100%;
     border-radius: 9999px;
-    border-width: 2px;
+    border: 2px solid #a0a0a0;
     padding: 24px 192px 20px 32px;
     font-weight: 400;
     color: #a0a0a0;
     font-size: 16px;
     background-color: white;
-    border-color: #a0a0a0;
+    
 }
 
 .input__button {
@@ -192,13 +192,6 @@ input {
     width: calc(100% / 3);
 }
 
-.services__container {
-    padding: 80px 0;
-    max-width: 1280px;
-    margin: 0 auto;
-    
-}
-
 .row {
     width: 100%;
     max-width: 1280px;
@@ -213,12 +206,20 @@ h3 {
     letter-spacing: 0.2em;
 }
 
+.services__container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+
 .services__para {
     color:#4c4c4c;
     font-size: 18px;
     text-align: center;
     font-weight: 500;
-    padding: 0 320px 32px 320px;
+    padding: 0 150px 32px 150px;
 }
 
 .services {
@@ -228,28 +229,32 @@ h3 {
 
 .service {
     display: flex;
+    flex-direction: row;
     width: calc(100% / 3);
-    padding: 16;
+    padding: 32px 8px;
     
 }
 
 .service__img {
-    color: blueviolet;
     border: 1px solid lightgray;
     border-radius: 9999px;
-    padding: 12px;
+    padding: 8px;
     display: flex;
+    width: 120px;
+    margin-right: 8px;
+    margin-bottom: 80px;
+    background-color: transparent;
 }
 
 .service__description {
     display: flex;
     flex-direction: column;
+    
 }
 
 h4 {
     font-size: 24px;
     color: #303030;
-
 }
 
 .service__para {
@@ -315,8 +320,8 @@ h4 {
 .accent__img--left {
     width: 125px;
     position: absolute;
-    bottom: 24px;
-    right: 400px;
+    bottom: 0px;
+    right: 625px;
     opacity: .25;
 }
 
@@ -341,14 +346,106 @@ h4 {
 }
 
 .twocolumn__steps--header {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500px;
     padding-top: 8px;
 }
 
 .twocolumn__steps--text {
-    font-size: 14px;
-    color: #4c4c4c;
-    line-height: 1em;
-    margin: 8px 0;
+    font-size: 16px;
+    color:#4c4c4c;
+    line-height: 1.5em;
+    margin: 8px 8px 8px 0px;
+}
+
+.left__column__60 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 60%;
+    padding-right: 24px;
+}
+
+.right__column__40 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+}
+
+.twocolumn__left {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.twocolumn__left--features {
+    display: flex;
+    flex-direction: column;
+}
+
+.twocolumn__left--features--img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.twocolumn__left--features--img {
+    color: rgb(74, 212, 74);
+    font-size: 32px;
+    border-radius: 9999px;
+    padding: 0 12px; 
+    margin-right: 8px;
+    background-color: rgb(223, 249, 223);;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+}
+
+.plan__middle--list {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan__top {
+    padding: 24px;
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+
+}
+
+.plan__middle {
+    padding: 24px;
+}
+
+.plan__bottom {
+    padding: 24px;
+    border-top: 2px solid lightgrey;
+    width: 100%;
+}
+
+.plan__button {
+    background-color:blueviolet;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    
 }
