@@ -713,15 +713,27 @@ h7 {
         align-items: center;
         margin-top: 64px;
         margin-bottom: 64px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .twocolumninput__container {
+        padding: 4px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .left__column {
         width: 90%;
-        margin-bottom: 24px;
+        margin: 24px;
+        padding: 4px;
     }
 
     .right__column {
         width: 90%;
+        padding: 4px;
+        margin: 24px;
     }
     h1 {
         font-size: 32px;
@@ -776,12 +788,11 @@ h7 {
     
     }
 
-    .twocolumn__button {
-        align-items: center;
-    }
+   
 
     .btn {
         align-self: center;
+        margin: 0 auto;
     }
 
     .quality-work {
@@ -792,21 +803,38 @@ h7 {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 24px;
+        margin-bottom: 0px;
     }
 
     .left__column__60 {
-        width: 90%;
-        margin-bottom: 24px;
+        width: 100%;
+        margin-bottom: 32px;
+        padding: 4px;
+        
     }
 
     .right__column__40 {
-        width: 90%;
+        width: 100%;
+        padding: 4px;
+        margin: 0;
+       
 
     }
 
+    .twocolumn__steps {
+        margin: 24px;
+        padding: 4px;
+    }
+
+    .twocolumn__steps--list {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .vertical__spacer {
-        height: 32px;
+        height: 64px;
     }
 
 
@@ -828,6 +856,49 @@ h7 {
     .plan-2,
     .plan-3 {
         width: 400px;
+    }
+
+    .twocolumn__left--features {
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        margin: 0 24px 0 24px;
+    }
+
+    .twocolumn__left--features--img {
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        margin: 0 auto;
+    }
+
+    .twocolumn__left--features--img-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left__column--img {
+        justify-content: center;
+        padding: 4px;
+        margin: 0 auto;
+        
+    }
+
+    .ratings {
+        text-align: center;
+    }
+
+    .twocolumn__steps--text {
+        text-align: center;
+        margin: 0 24px;
+    }
+
+    .twocolumn__right--testimonial {
+        justify-content: center;
+    }
+
+    .testimonial__img--mask {
+        margin: 0;
     }
 
     footer {
@@ -858,6 +929,7 @@ h7 {
         margin: 0 auto;
         width: 100%;
         align-items: center;
+        text-align: center;
     }
 
     .plan,
@@ -865,5 +937,14 @@ h7 {
     .plan-3 {
         width: 400px;
     }
+
+    .twocolumn__steps--header {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    
 
 }
