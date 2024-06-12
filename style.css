@@ -54,7 +54,8 @@ nav {
     color: #303030;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.menu__link:hover {
     text-decoration: underline;
     color: blueviolet;
 }
@@ -71,6 +72,77 @@ nav {
 .nav__link--primary:hover {
     background-color: rgb(168, 32, 156);
 }
+
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 24px 0;
+}
+
+.menu__link {
+    color: white;
+    font-size: 32px;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    
+    text-align: center;
+    border: none;
+    color: blueviolet;
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+
 
 #landing {
     width: 100%;
@@ -147,7 +219,6 @@ input {
     color: #a0a0a0;
     font-size: 16px;
     background-color: white;
-    
 }
 
 .input__button {
@@ -483,7 +554,6 @@ h4 {
     padding: 32px 0px;
     width: 100%;
     position: relative;
-
 }
 
 .plan__middle {
@@ -611,8 +681,6 @@ h6 {
     height: 80px;
     padding: 0px;
     margin-right: 24px;
-    
-    
 }
 
 .testimonial__img {
@@ -688,7 +756,6 @@ h7 {
     font-weight: 600;
     color:rgb(169, 165, 244);
     font-size: 24px;
-
 }
 
 .copyright {
@@ -775,7 +842,6 @@ h7 {
         text-align: left;
         width: 400px;
         padding: 16px 0 0 0;
-        
     }
 
     .service__description {
@@ -785,10 +851,7 @@ h7 {
     .services__para {
         padding: 0px;
         margin: 0px 0 16px 0;
-    
     }
-
-   
 
     .btn {
         align-self: center;
@@ -817,8 +880,6 @@ h7 {
         width: 100%;
         padding: 4px;
         margin: 0;
-       
-
     }
 
     .twocolumn__steps {
@@ -881,16 +942,23 @@ h7 {
         justify-content: center;
         padding: 4px;
         margin: 0 auto;
-        
     }
 
     .ratings {
         text-align: center;
     }
 
+    .twocolumn__left--features--img {
+        margin-right: 8px;
+    }
+
     .twocolumn__steps--text {
         text-align: center;
         margin: 0 24px;
+    }
+
+    .twocolumn__steps--header {
+        text-align: center;
     }
 
     .twocolumn__right--testimonial {
@@ -904,7 +972,17 @@ h7 {
     footer {
         padding: 24px;
     }
+
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+   
 }
+
 
 @media (max-width: 550px) {
     .twocolumn__container {
@@ -943,8 +1021,5 @@ h7 {
         align-items: center;
         text-align: center;
     }
-
-    
-    
-
 }
+
