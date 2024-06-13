@@ -15,6 +15,15 @@ body {
     overflow-x: hidden;
 }
 
+header{
+    margin: 32px;
+}
+
+main {
+    margin: 32px;
+}
+
+
 ul {
     display: flex;
 }
@@ -30,12 +39,31 @@ a {
 nav {
     height: 80px;
     display: flex;
+    margin: 32px;
 }
 
 .logo {
-    width: 160px;
+    width: 40px;
+    height: 40px;
+    margin: 0 12px 0 0;
+    border-radius: 4px;
 }
 
+.nav__link--logo {
+    font-weight: 600;
+    font-size: 24px;
+    color: #242424;
+}
+
+.nav__link--logo:hover { 
+    color: blueviolet;
+}
+
+.nav__container--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav__container {
     width: 100%;
     max-width: 1280px;
@@ -154,7 +182,8 @@ button:active {
     position: relative;
 }
 
-.twocolumn__container {
+.twocolumn__container,
+.twocolumn__container--flex {
     display: flex;
     flex-direction: row;
     margin-top: 150px;
@@ -174,7 +203,7 @@ button:active {
     display: flex;
     flex-direction: column;
     width: 60%;
-    position: relative;
+    
 }
 
 h1 {
@@ -274,7 +303,7 @@ input {
 
 h3 {
     text-align: center;
-    color: blueviolet;
+    color: rgb(138, 43, 226);
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -293,7 +322,7 @@ h3 {
     font-size: 18px;
     text-align: center;
     font-weight: 500;
-    padding: 0 150px 32px 150px;
+    padding: 0 64px 32px 64px;
 }
 
 .services {
@@ -364,7 +393,7 @@ h4 {
 }
 
 .btn:hover {
-        background-color: rgb(168, 32, 156);
+    background-color: rgb(168, 32, 156);
 }
 
 .right__column--img {
@@ -378,15 +407,16 @@ h4 {
 }
 
 .right__column--img--accent {
-    position: absolute;
-    right: 4px;
-    bottom: -12px;
+    position: relative;
     z-index: 1;
 }
 
 .accent__img--right {
     width: 100px;
     opacity: .8;
+    position: absolute;
+    right: 0px;
+    bottom: -32px;
 }
 
 .left__column--img {
@@ -404,8 +434,8 @@ h4 {
 .accent__img--left {
     width: 125px;
     position: absolute;
-    bottom: 0px;
-    right: 625px;
+    bottom: -24px;
+    right: 80%;
     opacity: .25;
 }
 
@@ -456,6 +486,7 @@ h4 {
     flex-direction: column;
     width: 40%;
     position: relative;
+    margin: 32px;
 }
 
 .twocolumn__left {
@@ -681,12 +712,14 @@ h6 {
     height: 80px;
     padding: 0px;
     margin-right: 24px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .testimonial__img {
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    padding-top: 8px;
+    transform: scale(1.6);
 }
 
 .links {
@@ -708,6 +741,7 @@ h6 {
     background-color: blueviolet;
     color: white;
     padding: 32px 0px; 
+    margin: 0px;
 }
 
 
@@ -734,7 +768,7 @@ h6 {
 footer {
     background-color: blueviolet;
     padding-bottom: 64px;
-    
+    margin: 0px;
 }
 
 .footer__info {
@@ -748,9 +782,7 @@ footer {
     color:rgb(169, 165, 244);
 }
 
-.footer__logo {
-    
-}
+
 
 h7 {
     font-weight: 600;
@@ -772,11 +804,22 @@ h7 {
     height: 64px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .twocolumn__container {
         padding: 0 24px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .twocolumn__container--flex {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         margin-top: 64px;
         margin-bottom: 64px;
@@ -798,7 +841,7 @@ h7 {
     }
 
     .right__column {
-        width: 90%;
+        width: 100%;
         padding: 4px;
         margin: 24px;
     }
@@ -879,7 +922,7 @@ h7 {
     .right__column__40 {
         width: 100%;
         padding: 4px;
-        margin: 0;
+        margin: 32px;
     }
 
     .twocolumn__steps {
@@ -895,17 +938,24 @@ h7 {
     }
 
     .vertical__spacer {
-        height: 64px;
+        height: 32px;
     }
 
-
+    #Quality--Work {
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .right__column--img {
-        display: none;
+        margin: 32px;
     }
 
     .right__column--img--accent {
         display: none;
     }
+
+   .left__column--img--accent {
+    display: none;
+   }
 
     .plans {
         display: flex;
