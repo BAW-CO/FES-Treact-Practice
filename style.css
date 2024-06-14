@@ -121,7 +121,7 @@ nav {
 .menu--open .menu__backdrop {
     display: flex;
     visibility: visible;
-    opacity: 1;
+    opacity: .95;
 }
 
 .menu--open {
@@ -141,7 +141,7 @@ nav {
 
 .menu__link {
     color: white;
-    font-size: 32px;
+    font-size: 16px;
 }
 
 .btn__menu--close {
